@@ -1,0 +1,28 @@
+{
+    "testFiles": "**/*.{feature,features,spec.js}",
+    "integrationFolder": "cypress/tests",
+    "videoUploadOnPasses": true,
+    "experimentalSessionSupport": false,
+    "experimentalStudio": true,
+    "video": true,
+    "numTestsKeptInMemory": 10,
+    "videoCompression": false,
+    "retries": 3,
+    "parallel": true,
+    "viewportWidth": 1500,
+    "viewportHeight": 1200,
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 20000,
+    "pageLoadTimeout": 30000,
+    "watchForFileChanges": false,
+    "screenshotOnRunFailure": false,
+    
+    "ignoreTestFiles": [
+        "*.ts",
+        "*.md"
+    ],
+    "reporter": "junit",
+    "reporterOptions": {
+        "mochaFile": "test-results/test-output-[hash].xml"
+    }
+}

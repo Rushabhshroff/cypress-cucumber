@@ -1,0 +1,107 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "End to End Feature",
+    "line": 1,
+    "id": "end-to-end-feature",
+    "tags": [],
+    "uri": "e2e.feature",
+    "elements": [
+      {
+        "id": "end-to-end-feature;end-to-end-scenario",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "End to End Scenario",
+        "tags": [
+          {
+            "name": "@e2e",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to website",
+            "result": {
+              "status": "passed",
+              "duration": 2229000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I SignIn as \"fav_user\" with \"testingisfun99\" password",
+            "result": {
+              "status": "passed",
+              "duration": 2344000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I add three products to cart",
+            "result": {
+              "status": "passed",
+              "duration": 3003000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click on Buy Button",
+            "result": {
+              "status": "passed",
+              "duration": 218000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I enter shipping details \"first\", \"last\", \"test address\", \"test province\" and \"123456\"",
+            "result": {
+              "status": "passed",
+              "duration": 2435000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click on Checkout Button",
+            "result": {
+              "status": "passed",
+              "duration": 1503000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click on \"Orders\" link",
+            "result": {
+              "status": "passed",
+              "duration": 258000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see elements in list",
+            "result": {
+              "status": "passed",
+              "duration": 479000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

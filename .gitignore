@@ -1,0 +1,7 @@
+node_modules
+results
+test-results
+.github
+npm_install_debug.log
+log
+.DS_Store

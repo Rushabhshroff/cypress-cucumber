@@ -1,0 +1,59 @@
+{
+  "browsers": [
+    {
+      "browser": "chrome",
+      "os": "Windows 10",
+      "versions": [
+        "latest",
+        "latest - 1"
+      ]
+    },
+    {
+      "browser": "firefox",
+      "os": "OS X Mojave",
+      "versions": [
+        "latest",
+        "latest - 1"
+      ]
+    },
+    {
+      "browser": "edge",
+      "os": "OS X Catalina",
+      "versions": [
+        "latest"
+      ]
+    }
+  ],
+  "run_settings": {
+    "cypress_config_file": "./cypress.json",
+    "cypress_version": "9",
+    "npm_dependencies": {
+      "@percy/cypress": "^3.0.0",
+      "cucumber": "^7.0.0-rc.0",
+      "cypress": "9.3.1",
+      "cypress-cucumber-preprocessor": "^4.3.1",
+      "cypress-xpath": "^2.0.1",
+      "tags": "^2.0.10",
+      "cypress-iframe": "^1.0.1"
+    },
+    "package_config_options": {
+      "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": true,
+        "stepDefinitions": "cypress/tests",
+        "cucumberJson": {
+          "generate": true,
+          "outputFolder": "cypress/cucumber-json",
+          "filePrefix": "rush_",
+          "fileSuffix": ".cucumber"
+        }
+      }
+    },
+    "project_name": "Cypress Kitchen Sink Example",
+    "build_name": "Build no: 1",
+    "parallels": 5,
+    "exclude": [
+      "some-folder/test.js",
+      "static/*.pdf"
+    ]
+  }
+}

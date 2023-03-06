@@ -1,0 +1,27 @@
+{
+    "name": "cypress-cucumber",
+    "version": "1.0.0",
+    "private": true,
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": true,
+        "stepDefinitions": "cypress/tests",
+        "cucumberJson": {
+            "generate": true,
+            "outputFolder": "cypress/cucumber-json",
+            "filePrefix": "rush_",
+            "fileSuffix": ".cucumber"
+        }
+    },
+    "dependencies": {
+        "@percy/cypress": "^3.0.0",
+        "cucumber": "^7.0.0-rc.0",
+        "cypress": "9.3.1",
+        "cypress-cucumber-preprocessor": "^4.3.1",
+        "cypress-xpath": "^2.0.1",
+        "tags": "^2.0.10"
+    },
+    "devDependencies": {
+        "browserstack-cypress-cli": "^1.19.3",
+        "cypress-iframe": "^1.0.1"
+    }
+}
